@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HouseViewController">
+            <connections>
+                <outlet property="houseNameLabel" destination="Qco-aR-hgE" id="bAa-EC-uid"/>
+                <outlet property="houseSigilImage" destination="OBz-O9-M4i" id="Zzo-rZ-aLa"/>
+                <outlet property="houseWordsLabel" destination="8Ew-FX-zgI" id="g7D-Wu-m91"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OBz-O9-M4i">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="B9T-VK-oiW" userLabel="Name&amp;information">
+                    <rect key="frame" x="20" y="80" width="335" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qco-aR-hgE">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="lpN-Vg-vdB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Rzl-nn-J8P"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ew-FX-zgI">
+                    <rect key="frame" x="20" y="612" width="335" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="go9-r3-F3g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Ew-FX-zgI" secondAttribute="bottom" constant="20" id="0Xm-Wb-WSt"/>
+                <constraint firstItem="OBz-O9-M4i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NqL-Cw-yDY"/>
+                <constraint firstAttribute="bottom" secondItem="OBz-O9-M4i" secondAttribute="bottom" id="VpS-7n-UuK"/>
+                <constraint firstItem="8Ew-FX-zgI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="XHN-jb-8RS"/>
+                <constraint firstItem="B9T-VK-oiW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="YD0-oI-Y7b"/>
+                <constraint firstItem="B9T-VK-oiW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ad7-lH-jiz"/>
+                <constraint firstAttribute="trailing" secondItem="B9T-VK-oiW" secondAttribute="trailing" constant="20" id="dws-B2-fNC"/>
+                <constraint firstAttribute="trailing" secondItem="OBz-O9-M4i" secondAttribute="trailing" id="jCe-Hk-agm"/>
+                <constraint firstAttribute="trailing" secondItem="8Ew-FX-zgI" secondAttribute="trailing" constant="20" id="jNP-bW-Rdy"/>
+                <constraint firstItem="OBz-O9-M4i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uKb-uu-Fka"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
